@@ -1,0 +1,580 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Reset de CSS */
+}
+
+body {
+  background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+header {
+  background-color: #0a6aaa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Background do header com sombra em baixo */
+}
+
+/* Estilizando menu desktop e mobile */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #e0e0e0;
+  font-size: 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 13px;
+  color: #e0e0e0;
+}
+
+.nav-list a:hover {
+  color: #000000b9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+  color: #e0e0e0;
+}
+
+.mobile-menu a:hover {
+  color: #000000b9;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* Fim estilização menu desktop e mobile */
+
+/* Estilizando efeito maquina de escrever */
+.front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17vh;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 25px;
+  border-right: 4px solid;
+  width: 29ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(29) infinite,
+    blinking 0.6s infinite step-end alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+/* Fim efeito maquina de escrever */
+
+/* Estilizando sobre mim */
+.container {
+  background-color: #0a6aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  border-radius: 5px;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+  padding: 5px 55px;
+  color: #e0e0e0;
+}
+/* Fim estilização sobre mim*/
+
+/* Estilizando formação */
+.container-formacao {
+  background-color: #0a6aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 130px auto;
+  border-radius: 5px;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.formacao ol li {
+  margin-left: 35px;
+  font-size: 25px;
+  color: #e0e0e0;
+}
+
+.formacao ol li p {
+  font-size: 20px;
+  padding: 22px;
+  color: #e0e0e0;
+}
+/* Fim estilização formação */
+
+/* Estilizando ícones */
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  padding: 10px 10px;
+}
+
+.icone {
+  text-align: center;
+  margin-top: 25px; 
+}
+
+.icone a {
+  text-decoration: none;
+  color: #0056b3;
+  font-size: 55px;
+}
+
+.icone a:hover {
+  color: #007bff;
+}
+
+.container-icone {
+  margin: 55px auto;
+  border: 1px solid #0a6aaa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  height: 100px;
+}
+/* Fim estilização ícones */
+
+/* Estilizando formulario */
+.contato-formulario {
+  background-color: #e0e0e0;
+  border: 1px solid #0a6aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 130px auto;
+  border-radius: 5px;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+}
+
+.formulario {
+  margin-top: -50px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+/* Fim estilização formulario */
+
+/* Media queries mobile responsive */
+@media only screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 45px 25px;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 10px;
+  }
+
+  .open {
+    display: block;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .container-formacao {
+    width: 80%;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .contato-formulario {
+    width: 80%;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  h2 {
+    margin-top: -40px;
+  }
+
+  .formacao ol li p {
+    font-size: 17px;
+    padding: 18px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .container {
+    height: 480px;
+    margin-top: -25px;
+  }
+
+  .container-formacao {
+    margin-top: 105px;
+  }
+
+  .contato-formulario {
+    margin-top: 105px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .container {
+    height: 380px;
+    margin-top: 5px;
+  }
+
+  .container-formacao {
+    margin-top: 95px;
+  }
+
+  .container-icone {
+    margin-top: 35px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .contato-formulario {
+    margin-top: 97px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .container {
+    margin-top: -25px;
+  }
+
+  .container-formacao {
+    margin-top: 88px;
+    height: 350px;
+  }
+
+  .formacao ol li {
+    font-size: 14px;
+  }
+
+  .formacao ol li p {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container-icone {
+    margin-top: 20px;
+    width: 70%;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .contato-formulario {
+    margin-top: 67px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    height: 30px;
+  }
+
+  .form-group button {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container-formacao {
+    margin-top: 50px;
+  }
+
+  .container-formacao {
+    margin-top: 82px;
+  }
+
+  .contato-formulario {
+    margin-top: 40px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .container-icone {
+    margin-top: 5px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .contato-formulario {
+    margin-top: 57px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .logo {
+    font-size: 13px;
+  }
+
+  .nav-bar {
+    padding: 25px;
+  }
+
+  .container {
+    margin-top: -25px;
+  }
+
+  .formacao ol li p {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .form-group button {
+    font-size: 13px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    font-size: 11px;
+  }
+
+  .mobile-menu ul li a {
+    font-size: 14px;
+  }
+
+  .nav-bar {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 13px;
+    margin-top: 25px;
+  }
+
+  .container {
+    margin-top: 22px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 10px;
+    width: 310px;
+  }
+
+  .container-formacao {
+    margin-top: 65px;
+    height: 280px;
+  }
+
+  .formacao ol li p {
+    font-size: 10px;
+  }
+
+  .formacao ol {
+    margin-left: 85px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 11px;
+  }
+
+  .container-icone {
+    margin-top: 1px;
+    height: 65px;
+  }
+
+  .container-icone a {
+    font-size: 19px;
+  }
+
+  .contato-formulario {
+    margin-top: 42px;
+    height: 300px;
+  }
+
+  .form-group button {
+    font-size: 10px;
+  }
+
+  label {
+    font-size: 10px;
+  }
+}
+/* Fim media queries mobile responsive */

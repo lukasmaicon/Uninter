@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/icon.png" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script         
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Script acima para icluir e utilizar ícones do ionicos no projeto -->
+
+    <title>Portfólio Pessoal</title>
+  </head>
+  <body>
+    <!-- Menu projeto sendo desktop e mobile -->
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <h1>Lucas Maicon</h1>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html">Sobre mim</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="formacao.html">Formação</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="portfolio.html">Portfólio</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="./img/menu_white_36dp.svg" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html">Sobre mim</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="formacao.html">Formação</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="portfolio.html">Portfólio</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Fim do menu desktop e mobile -->
+
+    <!-- Ícones em link com aLguns projetos que já fiz para praticar (Portfólio, Notícia Cidade e TecBlog) -->
+    <div class="icone">
+      <h3>Alguns links de projeto incluindo Portfólio:</h3>
+      <br />
+
+      <div class="container-icone">
+        <h4>Portfólio</h4>
+        <a href="https://lukasmaicon.github.io/Portfolio/" target="_blank">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+      </div>
+
+      <div class="container-icone">
+        <h4>Notícia Cidade</h4>
+        <a href="https://lukasmaicon.github.io/Noticia-Cidade/" target="_blank">
+          <ion-icon name="newspaper-outline"></ion-icon>
+        </a>
+      </div>
+
+      <div class="container-icone">
+        <h4>TecBlog</h4>
+        <a href="https://lukasmaicon.github.io/TecBlog/" target="_blank">
+          <ion-icon name="create-outline"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <!-- Fim de ícones -->
+
+    <script src="./script.js"></script>
+    <!-- JavaScript externo para interatividade com menu responsivo para mobile -->
+  </body>
+</html>

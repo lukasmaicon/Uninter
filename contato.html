@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/icon.png" />
+    <title>Portfólio Pessoal</title>
+  </head>
+  <body>
+    <!-- Menu projeto sendo desktop e mobile -->
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <h1>Lucas Maicon</h1>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html">Sobre mim</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="formacao.html">Formação</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="./img/menu_white_36dp.svg" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html">Sobre mim</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="formacao.html">Formação</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Fim do menu desktop e mobile -->
+
+    <!-- Formulário nome, email, mensagem -->
+    <div class="contato-formulario">
+      <form class="formulario">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Fim do formulário nome, email, mensagem -->
+
+    <script src="./script.js"></script>
+    <!-- JavaScript externo para interatividade com menu responsivo para mobile -->
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/icon.png" />
+    <title>Portfólio Pessoal</title>
+  </head>
+  <body>
+    <!-- Menu de todo projeto sendo desktop e mobile -->
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <h1>Lucas Maicon</h1>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html">Sobre mim</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="formacao.html">formação</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="portfolio.html">Portfólio</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="./img/menu_white_36dp.svg" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html">Sobre mim</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="formacao.html">Formação</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="portfolio.html">Portfólio</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Menu de todo projeto sendo desktop e mobile -->
+
+    <!-- Conteudo formacao com lista ordenada numerada -->
+    <div class="container-formacao">
+        <div class="formacao">
+          <ol>
+            <li>
+              <p><b>Curso:</b> <br> Análise e Desenvolvimento de Sistemas</p>
+            </li>
+            <li>
+              <p><b>Instituição:</b> <br> Uninter - Centro Universitário Internacional</p>
+            </li>
+            <li>
+              <p><b>Conclusão:</b><br> 07/2026</p>
+            </li>
+            <li>
+              <p><b>Idioma:</b> <br> Português</p>
+            </li>
+          </ol>
+        </div>
+    </div>
+    <!-- Fim lista ordenada e numerada-->
+
+    <script src="./script.js"></script>
+    <!-- JavaScript externo para interatividade com menu responsivo para mobile -->
+  </body>
+</html>
